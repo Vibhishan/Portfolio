@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --color-primary: #0D1317;
+    --color-white: #FFFFFF;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+body{
+    background-color: var(--color-primary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header{
+    height: 100vh;
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+.home{
+    min-width: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+// header content
+
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.profession{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+// about content
+
+.about-content{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.about-main-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    color: var(--color-primary);
+    background: #FFFFFF;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+// contact content
+
+.contact-content-con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    color: var(--color-white);
+    background: var(--color-primary);
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .left-contact{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .contact-info{
+        display: flex;
+        margin-top: 2rem;
+        a{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: left;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0.4rem;
+            &hover{
+                background-color: var(--color-secondary);
+                i{
+                    color : var(--color-primary);
+                }
+            }
+            i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.about{
+    width: 100vw;
+    height: 50vh;
+}
+
+.contact{
+    width: 100vw;
+    height: 50vh;
+}
+
+.main-title{
+    padding-bottom: 1rem;
+}
